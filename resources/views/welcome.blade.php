@@ -13,9 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap" rel="stylesheet">
     @vite('resources/css/app.css')
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="{{ asset('assets/css/sec2.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/css/sec2-love.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/css/sec3.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/sec2.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/sec2-love.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/sec3.css') }}" rel="stylesheet">
     <style>
         .overlay {
             display: flex;
@@ -112,8 +112,8 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src='https://cdn.jsdelivr.net/mojs/latest/mo.min.js'></script>
-    <script src="{{ asset('assets/js/script-sec2.js') }}"></script>
-    <script src="{{ asset('assets/js/script-sec3.js') }}"></script>
+    <script src="{{ asset('assets/script-sec2.js') }}"></script>
+    <script src="{{ asset('assets/script-sec3.js') }}"></script>
     <script>
         // Fungsi untuk melakukan scroll ke bagian tertentu dengan ID yang diberikan
         function scrollToSection(sectionId) {
