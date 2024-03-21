@@ -1,4 +1,4 @@
-<div class="absolute inset-x-0 top-0" onclick="scrollToSection('section2')">
+<div class="absolute inset-0" onclick="scrollToSection('section2')">
     <div class="container-2 mx-auto" style="width: 100%;">
         <svg class="svg-container" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 200">
             <line class="line line--left" x1="10" y1="17" x2="10" y2="183"> </line>
@@ -20,15 +20,7 @@
             </g>
         </svg>
         <div class="mo-container"> </div>
-    </div>
-
-    <div class="text-white text-center px-2">
-        <span class="text-xl font-semibold mb-3">Selamat Ulang Tahun Sayangg</span>
-        <p class="text-xl mt-5">Selamat juga udah bertahan sejauh ini,
-            Aku berharap kamu terus merasakan kebahagiaan di setiap langkah hidupmu, 
-            terutama di hari spesial ini. Selamat ulang tahun, sayang
-        </p>
-    </div>
+    </div> 
 
 </div>
 <audio class="blup" style="display: none" autoplay="">

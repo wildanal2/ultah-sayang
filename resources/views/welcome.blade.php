@@ -59,16 +59,20 @@
             </div>
         </div>
         <div class="absolute inset-x-0 bottom-0 pb-32 flex items-center justify-center">
-            <!-- <button  class="flex select-none items-center gap-3 rounded-lg bg-gradient-to-tr from-pink-600 to-pink-400 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button" data-ripple-light="true">
-                <i class="fa fa-solid fa-envelope-open"></i>
-                Buka Hadiah
-            </button> -->
 
         </div>
     </section>
     <section id="section2" class="bodysect2 relative">
         @include('section2')
-        @include('section2-1')
+        <div class="absolute inset-0 pb-32 flex items-center justify-center">
+            <div class="text-white text-center px-2">
+                <span class="text-xl font-semibold mb-3">Selamat Ulang Tahun Sayangg😘</span>
+                <p class="text-xl mt-5">Selamat juga udah bertahan sejauh ini,
+                    Aku berharap kamu terus merasakan kebahagiaan di setiap langkah hidupmu,
+                    terutama di hari spesial ini. Selamat ulang tahun, sayang❤️
+                </p>
+            </div>
+        </div>
     </section>
     <section id="section3" class="h-screen w-screen relative">
         <div id="header-plugin"></div>
@@ -82,8 +86,6 @@
         </div>
     </section>
     <section id="section4" class="h-screen w-screen relative" style="background-image: url('{{ asset('assets/bg1.jpg') }}'); background-size: cover; background-position: center;">
-
-
         <div class="absolute inset-0 flex justify-center items-center">
             <div class="text-center text-white px-2 py-2 backdrop-blur-sm">
                 <span class="text-2xl px-3 font-semibold">Ulang tahunmu adalah hari pertama dari perjalanan 365 hari lainnya.</span>
@@ -94,7 +96,19 @@
             </div>
         </div>
     </section>
-
+    <section id="section4" class="h-screen w-screen relative flex items-center justify-center">
+        <div class="relative mx-auto">
+            <div class="bodysect2 relative h-screen w-screen" style="">
+                @include('section2-1')
+            </div>
+        </div>
+        <div class="absolute inset-0 pb-5 flex items-center justify-center text-white">
+            <img src="{{ asset('assets/lov.jpg') }}" style="width: 100%;" />
+        </div>
+        <div class="absolute inset-x-0 bottom-0 pb-5 flex items-center justify-center text-white">
+            <span class="mx-auto">Made with <span style="color: #e25555;">&hearts;</span> @wildan._.al</span>
+        </div>
+    </section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src='https://cdn.jsdelivr.net/mojs/latest/mo.min.js'></script>
