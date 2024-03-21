@@ -18,7 +18,7 @@
     <link href="{{ asset('assets/css/sec3.css') }}" rel="stylesheet">
     <style>
         .overlay {
-            display: none;
+            display: flex;
             position: fixed;
             top: 0;
             left: 0;
