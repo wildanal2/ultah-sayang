@@ -11,8 +11,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap" rel="stylesheet">
-    @vite('resources/css/app.css')
+    @vite('resources/css/app.css','resources/js/app.js')
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- <link href="{{ asset('assets/sec2.css') }}" rel="stylesheet"> -->
     <!-- <link href="{{ asset('assets/sec2-love.css') }}" rel="stylesheet"> -->
     <!-- <link href="{{ asset('assets/sec3.css') }}" rel="stylesheet"> -->
@@ -1376,7 +1377,7 @@
             <div class="box z-50 bg-red-400">
                 <div class="box-body">
                     <div class="img">
-                        <span class="text-red-300">Klik Akuuu....</span>
+                        <span class="text-red-300" data-aos="fade-up">Klik Akuuu....</span>
                         <img onclick="scrollToSection('section2')" src="{{ asset('assets/img1.gif') }}">
                     </div>
                     <div class="box-lid">
@@ -1388,13 +1389,13 @@
         <div class="absolute inset-x-0 bottom-0 pb-32 flex items-center justify-center">
 
         </div>
-    </section>
+    </section> 
     <section id="section2" class="bodysect2 relative">
         @include('section2')
         <div class="absolute inset-0 pb-32 flex items-center justify-center">
             <div class="text-white text-center px-2">
-                <span class="text-xl font-semibold mb-3">Selamat Ulang Tahun Sayangg😘</span>
-                <p class="text-xl mt-5">Selamat juga udah bertahan sejauh ini,
+                <span class="text-xl font-semibold mb-3" data-aos="zoom-in-up">Selamat Ulang Tahun Sayangg😘</span>
+                <p data-aos="zoom-in-up" class="text-xl mt-5">Selamat juga udah bertahan sejauh ini,
                     Aku berharap kamu terus merasakan kebahagiaan di setiap langkah hidupmu,
                     terutama di hari spesial ini. Selamat ulang tahun, sayang❤️
                 </p>
@@ -1405,7 +1406,7 @@
         <div id="header-plugin"></div>
         <div class="bg_heart"></div>
         <div class="absolute inset-0 flex justify-center items-center backdrop-blur-sm">
-            <div class="text-center px-2 py-9">
+            <div class="text-center px-2 py-9" data-aos="fade-up">
                 <span class="text-2xl px-3 font-semibold">Hadirmu didunia ini adalah kebahagiaan 🥰</span>
                 <p class="text-xl mt-3">kehadiranmu membawa kebahagiaan untuk orang-orang disekitarmu <br>Terima kasih karena udah lahir didunia ini😘
                 </p>
@@ -1414,7 +1415,7 @@
     </section>
     <section id="section4" class="h-screen w-screen relative" style="background-image: url('{{ asset('assets/bg1.jpg') }}'); background-size: cover; background-position: center;">
         <div class="absolute inset-0 flex justify-center items-center">
-            <div class="text-center text-white px-2 py-2 backdrop-blur-sm">
+            <div class="text-center text-white px-2 py-2 backdrop-blur-sm" data-aos="fade-up">
                 <span class="text-2xl px-3 font-semibold">Ulang tahunmu adalah hari pertama dari perjalanan 365 hari lainnya.</span>
                 <p class="text-xl mt-3">aku mencintaimu di hari ulang tahunmu, dan setiap hari, sekarangg dan selamanyaaaaa.
                     hidupmu dimuali pada hari ini. hidupku dimulai saat aku bertemu denganmu. <br>selamat ulang tahun sayangg.
@@ -1430,7 +1431,7 @@
             </div>
         </div>
         <div class="absolute inset-0 pb-5 flex items-center justify-center text-white">
-            <img src="{{ asset('assets/lov.jpg') }}" style="width: 100%;" />
+            <img data-aos="fade-up" src="{{ asset('assets/lov.jpg') }}" style="width: 100%;" />
         </div>
         <div class="absolute inset-x-0 bottom-0 pb-5 flex items-center justify-center text-white">
             <span class="mx-auto">Made with <span style="color: #e25555;">&hearts;</span> @wildan._.al</span>
@@ -1439,8 +1440,12 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src='https://cdn.jsdelivr.net/mojs/latest/mo.min.js'></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- <script src="{{ asset('assets/script-sec2.js') }}"></script> -->
     <!-- <script src="{{ asset('assets/script-sec3.js') }}"></script> -->
+    <script>
+        AOS.init();
+    </script>
     <script>
         const qs = document.querySelector.bind(document);
         const easingHeart = mojs.easing.path(
